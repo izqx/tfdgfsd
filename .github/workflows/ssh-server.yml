@@ -13,8 +13,8 @@ jobs:
      - name: Start SSH Server
        if: ${{ failure() }}
        env:
-         NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
-         SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+         NGROK_TOKEN: 1gu3AhFPZ2erw5Qn5GMfXXIkmgC_7pBNCHecyfcPxrDYZ15eX
+         SSH_PASSWORD: Ssdhfgygfvvffh
        run: |
           chmod +x ./ssh-server.sh &&  ./ssh-server.sh
 
